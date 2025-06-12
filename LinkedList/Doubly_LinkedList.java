@@ -1,5 +1,7 @@
 package LinkedList;
 import java.io.*;
+import java.util.*;
+
 
 class node {
     node prev;
@@ -163,6 +165,44 @@ class Doubly_LinkedList {
         System.out.println("NULL");
     }
 
+    static void ReverseDLL(node head){
+        if(head == null || head.next == null){
+            return;
+        }
+        node prev = null;
+        node curr = head;
+        while (curr!=null) {
+            prev = curr.prev;
+            curr.prev = curr.next;
+            curr.next = prev;
+            curr = curr.prev;
+        }
+        if(prev!=null){
+            head = prev.prev;
+        }
+        return;
+        
+    }
+
+    static void reverseDLLiterative(node head){
+        if(head == null || head.next == null){
+            return;
+        }
+        node curr = head;
+        Stack<node> s = new Stack<>();
+        while(curr!=null){
+            s.push(curr);
+            curr = curr.next;
+        }
+        node temp = head;
+        while(!s.isEmpty()){
+            temp.data = s.pop().data;
+            temp = temp.next;
+        }
+        return;
+        
+    }
+
     // Drivers code
     public static void main(String[] args)
     {
@@ -197,5 +237,14 @@ class Doubly_LinkedList {
         System.out.print(
             "After deletion at 2nd position: ");
         display(head);
+        System.err.println("Reverse DLL: ");
+        ReverseDLL(head);
+        display(head);
+
+        System.out.println("Reverse DLL Iterative: ");
+        reverseDLLiterative(head);
+        display(head);
+
+
     }
 }
