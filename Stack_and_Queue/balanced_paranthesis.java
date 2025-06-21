@@ -1,4 +1,4 @@
-package Stack_and_Queue;
+
 import java.util.Stack;
 
 public class balanced_paranthesis {
