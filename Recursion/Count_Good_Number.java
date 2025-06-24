@@ -1,4 +1,4 @@
-package Recursion;
+
 
 public class Count_Good_Number {
     static final long MOD = 1_000_000_007;

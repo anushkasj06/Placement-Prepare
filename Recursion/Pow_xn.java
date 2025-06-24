@@ -1,4 +1,3 @@
-package Recursion;
 
 public class Pow_xn {
     public double myPow(double x, int n) {
