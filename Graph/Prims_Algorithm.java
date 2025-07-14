@@ -2,7 +2,7 @@ import java.util.PriorityQueue;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Prims_Agorithm {
+public class Prims_Algorithm {
     static class Pair {
         int weight;
         int node;
