@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Disjoint_Set {
+class Disjoint_Set {
     List<Integer> parent;
     List<Integer> rank;
     List<Integer> size;
