@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka Jadhav - GSA Candidate Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --g-blue: #4285F4;
+            --g-red: #DB4437;
+            --g-yellow: #F4B400;
+            --g-green: #0F9D58;
+            --text-dark: #3c4043;
+            --text-light: #5f6368;
+            --bg-light: #f8f9fa;
+            --border-color: #dfe1e5;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #f4f7f9, #e8eaed);
+            margin: 0;
+            padding: 25px;
+            color: var(--text-dark);
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #4285F4, #1a73e8);
+            color: white;
+            padding: 35px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 34px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .header p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            font-weight: 400;
+            opacity: 0.95;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+        .header a:hover {
+            opacity: 0.8;
+        }
+        .main-content {
+            padding: 35px;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .section h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-dark);
+            border-bottom: 3px solid var(--g-blue);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+        .summary p {
+            font-size: 17px;
+            line-height: 1.7;
+            text-align: center;
+            font-weight: 400;
+            color: var(--text-light);
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+        .metric {
+            background-color: var(--bg-light);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+        .metric .value {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--g-blue);
+        }
+        .metric .label {
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 5px;
+            color: var(--text-light);
+        }
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        .card h3 {
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--g-blue);
+        }
+        .card h3 a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .card h3 a:hover {
+            text-decoration: underline;
+        }
+        .card p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text-light);
+            margin: 0;
+        }
+        .skills-container .skill-item {
+            margin-bottom: 15px;
+        }
+        .skills-container .skill-item:last-child {
+            margin-bottom: 0;
+        }
+        .skills-container .skill-item .skill-name {
+            font-weight: 500;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        .skills-container .skill-bar {
+            background-color: #e8eaed;
+            border-radius: 5px;
+            height: 10px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .skills-container .skill-level {
+            background: linear-gradient(90deg, #34A853, #0F9D58);
+            height: 100%;
+            border-radius: 5px;
+        }
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        .mission-step {
+            padding: 25px;
+            border-radius: 12px;
+            color: white;
+            text-align: center;
+        }
+        .mission-step h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+        }
+        .mission-step p {
+            font-size: 15px;
+            line-height: 1.6;
+            opacity: 0.95;
+            margin:0;
+        }
+        .empower { background-color: var(--g-blue); }
+        .connect { background-color: var(--g-green); }
+        .inspire { background-color: var(--g-yellow); color: var(--text-dark); }
+        .inspire p { color: var(--text-dark); opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ANUSHKA JADHAV</h1>
+            <p>Google Student Ambassador Candidate Profile</p>
+            <p>
+                <a href="YOUR_LINKEDIN_URL" target="_blank">LinkedIn</a> | 
+                <a href="YOUR_GITHUB_URL" target="_blank">GitHub</a> | 
+                <a href="YOUR_PORTFOLIO_URL" target="_blank">Portfolio</a>
+            </p>
+        </div>
+        <div class="main-content">
+            <div class="section summary">
+                <p>Passionate Computer Engineering student with a 9.23 CGPA and a drive to build impactful technology that fosters collaborative communities. A proven hackathon winner and community leader dedicated to leveraging technology to create real-world solutions.</p>
+            </div>
+
+            <div class="section">
+                <h2>Key Metrics</h2>
+                <div class="metrics-grid">
+                    <div class="metric"><div class="value">400+</div><div class="label">LeetCode Problems</div></div>
+                    <div class="metric"><div class="value">9.23</div><div class="label">Current CGPA</div></div>
+                    <div class="metric"><div class="value">2</div><div class="label">Major Hackathon Wins</div></div>
+                    <div class="metric"><div class="value">5+</div><div class="label">End-to-End Projects</div></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Flagship Projects</h2>
+                <div class="grid-layout">
+                    <div class="card">
+                        <h3><a href="https://github.com/anushkasj06/ai-mock-interviwer" target="_blank">AI Interview Assistant</a></h3>
+                        <p>Created a voice-interactive platform for mock interviews with real-time feedback using Gemini LLM.</p>
+                    </div>
+                    <div class="card">
+                        <h3><a href="https://github.com/anushkasj06/book-my-show-clone" target="_blank">BookMyShow Clone</a></h3>
+                        <p>Full-stack movie booking site with a multi-tier architecture using Spring Boot, Java & MySQL.</p>
+                    </div>
+                     <div class="card">
+                        <h3><a href="https://oneconnect.onrender.com/" target="_blank">OneConnect Platform</a></h3>
+                        <p>Developed and deployed a LinkedIn-like networking platform using the MERN stack.</p>
+                    </div>
+                    <div class="card">
+                         <h3><a href="https://github.com/anushkasj06/performance_prediction" target="_blank">Student Performance Predictor</a></h3>
+                        <p>A tool integrated with LMS and Random Forest Classifier + Gemini to predict student progress.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Technical Skills</h2>
+                <div class="grid-layout skills-container">
+                    <div class="card">
+                        <h3>Languages</h3>
+                        <div class="skill-item"><div class="skill-name">Java</div><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">Python</div><div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">JavaScript</div><div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">SQL</div><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div></div>
+                    </div>
+                    <div class="card">
+                        <h3>Backend & Frontend</h3>
+                        <div class="skill-item"><div class="skill-name">Node.js, Express.js</div><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">Spring Boot, Hibernate</div><div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">React.js, Redux</div><div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">REST APIs</div><div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div></div>
+                    </div>
+                    <div class="card">
+                        <h3>Databases & Tools</h3>
+                        <div class="skill-item"><div class="skill-name">MongoDB</div><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">MySQL</div><div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">Git & GitHub</div><div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">Postman</div><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>My GSA Mission Blueprint</h2>
+                <div class="mission-grid">
+                    <div class="mission-step empower">
+                        <h3>1. EMPOWER</h3>
+                        <p>Host "Build & Deploy" workshops on AI and Full-Stack, guiding students from idea to app using my own projects as examples.</p>
+                    </div>
+                    <div class="mission-step connect">
+                        <h3>2. CONNECT</h3>
+                        <p>Launch a "Problem-Solvers' Hub" for collaborative coding, using my LeetCode experience to help students tackle challenges.</p>
+                    </div>
+                    <div class="mission-step inspire">
+                        <h3>3. INSPIRE</h3>
+                        <p>Create a mentorship program for first-year students, using my experience as "Best Excellence Student" to guide them.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
