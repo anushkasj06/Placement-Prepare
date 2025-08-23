@@ -1,4 +1,3 @@
-package DynammicProgramming;
 
 public class frogJumpByK {
     public int frogJumpBykdist(int n , int[] h, int k){

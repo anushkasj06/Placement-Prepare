@@ -1,4 +1,3 @@
-package DynammicProgramming;
 
 public class FrogJump {
     public int frogJump(int n, int[] h){
