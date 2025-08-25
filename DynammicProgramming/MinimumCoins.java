@@ -57,4 +57,5 @@ public class MinimumCoins {
             prev = curr;
         }
         return prev[amount] >= (int) 1e9 ? -1 : prev[amount];
+    }
 }
