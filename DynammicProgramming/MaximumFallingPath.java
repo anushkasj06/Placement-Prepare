@@ -53,4 +53,15 @@ public class MaximumFallingPath {
         }
         return min;
     }
+
+    public static void main(String[] args) {
+        MaximumFallingPath obj = new MaximumFallingPath();
+        int[][] matrix = {
+            {2, 1, 3},
+            {6, 5, 4},
+            {7, 8, 9}
+        };
+        int result = obj.minFallingPathSum(matrix);
+        System.out.println("Minimum Falling Path Sum: " + result);
+    }
 }
