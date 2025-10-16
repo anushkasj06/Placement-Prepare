@@ -54,4 +54,69 @@ public class Longest_Subarray_with_Sum_K {
     }
 
 
+    public int longestsubarraywithsumK_usingprefixsum(int[] a, long k){
+        HashMap<Integer, Integer> map = new HashMap<>();
+        map.put(0,-1);
+        long sum = 0;
+        int maxLength = 0;
+        for(int i =0;i<a.length;i++){
+            sum += a[i];
+            if(sum==k){
+                maxLength = Math.max(maxLength, i + 1);
+            }
+            int res = (int)(sum -k);
+            if(map.containsKey(res)){
+                maxLength = Math.max(maxLength, i- map.get(res));
+            }
+            if(!map.containsKey(res)){
+                map.put(res, i);
+            }
+        }
+
+        return maxLength;
+    }
+
+    public int countsubarraywirthsumk(int[] a, int k){
+        HashMap<Integer, Integer> map = new HashMap<>();
+        map.put(0,1);
+        int sum =0;
+        int count =0;
+        for(int i=0;i<a.length;i++){
+            sum += a[i];
+            if(sum==k){
+                count++;
+            }
+            int res = (int)(sum -k);
+            if(map.containsKey(res)){
+                count += map.get(res);
+            }
+            map.put(sum, map.getOrDefault(sum, 0) + 1);
+        }
+
+        return count;
+    }
+
+    public int countsubarrayWithsumK(int[] a, int k){
+        int left =0;
+        int right =0;
+        int sum = a[0];
+        int n = a.length;
+        int count =0;
+        while(right<n){
+            if(sum==k){
+                count++;
+            }
+            right++;
+            if(right<n){
+                sum += a[right];
+            }
+            if(sum>k){
+                left++;
+                sum -= a[left];
+            }
+        }
+
+    }
+
+
 }

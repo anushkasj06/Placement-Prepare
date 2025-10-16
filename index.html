@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI Ocean Chatbot Use Case Diagram</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #fdfdfd;
+    }
+    .diagram-box {
+      width: 960px; /* Half slide width */
+      height: 540px; /* Half slide height */
+      background: #ffffff;
+      border: 2px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+      padding: 20px;
+    }
+    .mermaid {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <script>
+    mermaid.initialize({ 
+      startOnLoad:true, 
+      theme: 'base',
+      themeVariables: {
+        primaryColor: '#e0f7fa',
+        primaryBorderColor: '#006064',
+        primaryTextColor: '#004d40',
+        actorBorder: '#1565c0',
+        actorTextColor: '#0d47a1',
+        actorLineColor: '#1565c0',
+        useCaseTextColor: '#004d40',
+        useCaseBorderColor: '#00897b',
+        useCaseBackground: '#e0f2f1',
+        fontSize: '18px',
+        lineColor: '#333'
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="diagram-box">
+    <div class="mermaid">
+%%{init: { 'theme':'base'}}%%
+usecaseDiagram
+    actor Researchers as R
+    actor "Service Providers" as SP
+    actor "Policy Makers" as PM
+    actor "Fishermen & Coastal Users" as F
+    actor "Common People" as P
+    actor "Students & Educators" as S
+    actor "Disaster Mgmt Authorities" as D
+    actor "Private Companies" as I
+
+    R --> (Query Ocean Data)
+    R --> (View Data Visualizations)
+    R --> (Export Data)
+
+    SP --> (Premium API Access)
+    SP --> (Export Data)
+
+    PM --> (Receive Real-Time Alerts)
+    PM --> (Access Personalized Dashboards)
+
+    F --> (Receive Real-Time Alerts)
+
+    P --> (Education & Awareness Modules)
+    P --> (Voice-Based Multilingual Assistant)
+
+    S --> (Education & Awareness Modules)
+    S --> (Voice-Based Multilingual Assistant)
+
+    D --> (Early Warning & Disaster Management)
+
+    I --> (Premium API Access)
+    I --> (Access Personalized Dashboards)
+
+    (Query Ocean Data) ..> (View Data Visualizations) : includes
+    (Query Ocean Data) ..> (Voice-Based Multilingual Assistant) : alt text/voice
+    (Receive Real-Time Alerts) ..> (Early Warning & Disaster Management) : supports
+    (Access Personalized Dashboards) ..> (Export Data) : includes
+    </div>
+  </div>
+</body>
+</html>
